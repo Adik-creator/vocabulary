@@ -123,6 +123,16 @@ export const DICTIONARY = {
         {english: "a mosque", russian: "мечеть", id: 12, img: '/images/dayEleven/mosque.jpg'},
         {english: "a synagogue", russian: "синагога", id: 13, img: '/images/dayEleven/synagogue.jpg'},
         {english: "a temple", russian: "храм", id: 14, img: '/images/dayEleven/temple.jpg'},
+        {english: "arrivals", russian: "прибытие", id: 14, img: '/images/dayEleven/arrivals.jpg'},
+        {english: "bag drop", russian: "сдача багажа", id: 14, img: '/images/dayEleven/bag_drop.jpg'},
+        {english: "baggage reclaim", russian: "получение багажа", id: 14, img: '/images/dayEleven/baggage_reclaim.jpg'},
+        {english: "reclaim", russian: "вернуть, восстановить", id: 14, img: '/images/dayEleven/reclaim.png'},
+        {english: "check in", russian: "регистрироваться", id: 14, img: '/images/dayEleven/check_in.jpg'},
+        {english: "customs", russian: "таможня", id: 14, img: '/images/dayEleven/customs.jpg'},
+        {english: "departures", russian: "Отправления", id: 14, img: '/images/dayEleven/departures.jpg'},
+        {english: "gates", russian: "ворота", id: 14, img: '/images/dayEleven/gates.jpeg'},
+        {english: "security check", russian: "проверка безопасности", id: 14, img: '/images/dayEleven/security_check.jpeg'},
+        {english: "trolley", russian: "тележка", id: 14, img: '/images/dayEleven/trolley.jpg'},
     ],
 };
 
