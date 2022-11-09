@@ -1,13 +1,13 @@
 import React, {useState} from "react";
+
 import {
-    AppBar, Box,
-    Button,
-    Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText,
-    Toolbar,
-    Typography,
-    useMediaQuery,
-    useTheme,
+    AppBar, Box, Button,
+    Drawer, IconButton, List,
+    ListItemButton, ListItemIcon,
+    ListItemText, Toolbar,
+    Typography, useMediaQuery, useTheme,
 } from "@mui/material";
+
 import styles from './Header.module.css'
 import {CustomLink} from "../CustomLink/CustomLink";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -49,14 +49,17 @@ const Header = () => {
                     >
                         <List sx={{marginLeft: '1rem'}}>
                             <Box sx={{marginBottom: '1rem'}}>
-                                <Button sx={{marginLeft: "auto"}} variant="contained">
+                                <Button sx={{marginLeft: "10px", backgroundColor: '#222'}} variant="contained">
                                     Login
                                 </Button>
-                                <Button sx={{marginLeft: "10px"}} variant="contained">
+                                <Button sx={{marginLeft: "10px", backgroundColor: '#222'}} variant="contained">
                                     SignUp
                                 </Button>
                             </Box>
 
+                            <Button sx={{marginLeft: "10px", marginBottom: '1rem', backgroundColor: '#222'}} variant="contained">
+                                <CustomLink to={'/irregular'}>irregular verbs</CustomLink>
+                            </Button>
                             {Object.keys(DICTIONARY).map((day, index) => (
                                 <ListItemButton key={index}>
                                     <CustomLink to={`days/${day}`}>

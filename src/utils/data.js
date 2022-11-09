@@ -25,12 +25,7 @@ export const DICTIONARY = {
     ],
     DayThree: [
         {english: "to get in the car", russian: "сесть в машину", id: 11, img: '/images/dayThree/togetinthecar.jpg'},
-        {
-            english: "to go out of the car",
-            russian: "выйти из машины",
-            id: 12,
-            img: '/images/dayThree/togooutofthecar.jpg'
-        },
+        {english: "to go out of the car", russian: "выйти из машины", id: 12, img: '/images/dayThree/togooutofthecar.jpg'},
         {english: "to open", russian: "открыть", id: 18, img: '/images/dayThree/toopen.jpeg'},
         {english: "to write", russian: "писать", id: 13, img: '/images/dayThree/towrite.jpeg'},
         {english: "to eat", russian: "кушать", id: 14, img: '/images/dayThree/toeat.jpg'},
@@ -143,7 +138,6 @@ export const IRREGULAR_VERBS = [
     {id: 8, BaseForm: "bring", PastSimple: "brought", Russian: "приносить"},
     {id: 9, BaseForm: "build", PastSimple: "built", Russian: "строить"},
     {id: 10, BaseForm: "buy", PastSimple: "bought", Russian: "купить"},
-
     {id: 11, BaseForm: "become", PastSimple: "became", Russian: "стали"},
     {id: 12, BaseForm: "can", PastSimple: "could", Russian: "Можно"},
     {id: 13, BaseForm: "catch", PastSimple: "caught", Russian: "ловить"},
@@ -165,7 +159,6 @@ export const IRREGULAR_VERBS = [
     {id: 29, BaseForm: "know", PastSimple: "knew", Russian: "знать"},
     {id: 30, BaseForm: "leave", PastSimple: "left", Russian: "оставлять"},
     {id: 31, BaseForm: "lose", PastSimple: "lost", Russian: "терять"},
-
     {id: 32, BaseForm: "make", PastSimple: "made", Russian: "делать"},
     {id: 33, BaseForm: "meet", PastSimple: "met", Russian: "встретиться"},
     {id: 34, BaseForm: "pay", PastSimple: "paid", Russian: "платить"},
