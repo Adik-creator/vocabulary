@@ -12,6 +12,7 @@ import styles from './Header.module.css'
 import {CustomLink} from "../CustomLink/CustomLink";
 import MenuIcon from "@mui/icons-material/Menu";
 import {DICTIONARY} from "../../utils/data";
+import {Link} from "react-router-dom";
 
 
 const Header = () => {
@@ -49,25 +50,27 @@ const Header = () => {
                     >
                         <List sx={{marginLeft: '1rem'}}>
 
-                            <Box sx={{marginBottom: '1rem'}}>
-                                <Button sx={{marginLeft: "10px", backgroundColor: '#222'}} variant="contained">
+                            <Box sx={{marginBottom: '2rem',marginLeft: '1rem', display: 'flex', gap: '1.5rem'}}>
+                                <Link to={'/hello'} className={styles.login}>
                                     Login
-                                </Button>
-                                <Button sx={{marginLeft: "10px", backgroundColor: '#222'}} variant="contained">
-                                    SignUp
-                                </Button>
+                                </Link>
+                                <Link to={'/logout'} className={styles.logout}>
+                                    Logout
+                                </Link>
                             </Box>
 
 
 
-                            <Button sx={{marginLeft: "10px", marginBottom: '1rem', backgroundColor: '#222'}} variant="contained">
-                                <CustomLink to={'/irregular'}>irregular verbs</CustomLink>
+                            <Button
+                                sx={{marginBottom: '2rem'}}
+                            >
+                                <Link to={'/irregular'} className={styles.irregularVerbs}>irregular verbs</Link>
                             </Button>
                             {Object.keys(DICTIONARY).map((day, index) => (
-                                <ListItemButton key={index}>
+                                <ListItemButton key={day}>
                                     <CustomLink to={`days/${day}`}>
                                         <ListItemIcon
-                                            sx={{width: 200, borderBottom: 1, borderColor: '#cccccc'}}
+                                            sx={{width: 'auto', borderBottom: 1, borderColor: '#cccccc'}}
                                         >
                                             <ListItemText>{`day ${index + 1}`}</ListItemText>
                                         </ListItemIcon>
