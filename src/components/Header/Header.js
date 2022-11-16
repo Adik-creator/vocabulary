@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 import {
-    AppBar, Box, Button,
+    AppBar, Box,
     Drawer, IconButton, List,
     ListItemButton, ListItemIcon,
     ListItemText, Toolbar,
@@ -48,9 +48,9 @@ const Header = () => {
                         open={openDrawer}
                         onClose={() => setOpenDrawer(!openDrawer)}
                     >
-                        <List sx={{marginLeft: '1rem'}}>
+                        <List sx={{marginLeft: '1rem', padding: "1rem"}}>
 
-                            <Box sx={{marginBottom: '2rem',marginLeft: '1rem', display: 'flex', gap: '1.5rem'}}>
+                            <Box sx={{marginBottom: '1rem', display: 'flex', gap: '1rem'}}>
                                 <Link to={'/hello'} className={styles.login}>
                                     Login
                                 </Link>
@@ -58,25 +58,25 @@ const Header = () => {
                                     Logout
                                 </Link>
                             </Box>
+                            <Box sx={{marginBottom: '1rem',}}>
+                                <Link to={'/irregular'} className={styles.irregularVerbs}>
+                                    irregular verbs
+                                </Link>
+                            </Box>
 
-
-
-                            <Button
-                                sx={{marginBottom: '2rem'}}
-                            >
-                                <Link to={'/irregular'} className={styles.irregularVerbs}>irregular verbs</Link>
-                            </Button>
-                            {Object.keys(DICTIONARY).map((day, index) => (
-                                <ListItemButton key={day}>
-                                    <CustomLink to={`days/${day}`}>
-                                        <ListItemIcon
-                                            sx={{width: 'auto', borderBottom: 1, borderColor: '#cccccc'}}
-                                        >
-                                            <ListItemText>{`day ${index + 1}`}</ListItemText>
-                                        </ListItemIcon>
-                                    </CustomLink>
-                                </ListItemButton>
-                            ))}
+                            <Box>
+                                {Object.keys(DICTIONARY).map((day, index) => (
+                                    <ListItemButton key={day}>
+                                        <CustomLink to={`days/${day}`}>
+                                            <ListItemIcon
+                                                sx={{width: '170px', borderBottom: 1, borderColor: '#cccccc'}}
+                                            >
+                                                <ListItemText>{`day ${index + 1}`}</ListItemText>
+                                            </ListItemIcon>
+                                        </CustomLink>
+                                    </ListItemButton>
+                                ))}
+                            </Box>
                         </List>
                     </Drawer>
 
