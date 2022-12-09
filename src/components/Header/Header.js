@@ -43,7 +43,7 @@ const Header = () => {
                     </Typography>
 
                     <Drawer
-                        anchor="left"
+                        anchor="right"
                         variant="temporary"
                         open={openDrawer}
                         onClose={() => setOpenDrawer(!openDrawer)}
@@ -56,6 +56,9 @@ const Header = () => {
                                 </Link>
                                 <Link to={'/logout'} className={styles.logout}>
                                     Logout
+                                </Link>
+                                <Link to={'/todo'} className={styles.logout}>
+                                    Todo
                                 </Link>
                             </Box>
                             <Box sx={{marginBottom: '1rem',}}>

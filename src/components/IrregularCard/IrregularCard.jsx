@@ -18,11 +18,11 @@ const IrregularCard = ({dictionary}) => {
                 <Typography variant="h5" component="div">
                     {dictionary.PastSimple}
                 </Typography>
-                <Typography sx={{mb: 1.5}} color="#222">
-                    {dictionary.Russian}
-                </Typography>
                 <Typography variant="body2">
                     ---------------------
+                </Typography>
+                <Typography sx={{mb: 1.5}} color="#222">
+                    {dictionary.Russian}
                 </Typography>
             </CardContent>
             <CardActions>

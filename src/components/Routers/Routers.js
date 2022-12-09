@@ -8,6 +8,7 @@ import {HomePage} from "../../pages/HomePage";
 import LogOut from "../User/LogOut/LogOut";
 import Login from "../User/LogIn/Login";
 import {NotFoundPage} from "../../pages/NotFoundPage/NotFoundPage";
+import {Todo} from "../Todo/Todo";
 
 const Routers = () => {
     return (
@@ -18,6 +19,7 @@ const Routers = () => {
                 <Route path={'irregular'} element={<IrregularVerbs />}/>
                 <Route path={'logout'} element={<LogOut/>}/>
                 <Route path={'login'} element={<Login/>}/>
+                <Route path={'todo'} element={<Todo/>} />
                 <Route path={'*'} element={<NotFoundPage/>}/>
             </Route>
         </Routes>
